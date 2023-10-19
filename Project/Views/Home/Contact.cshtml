@@ -1,0 +1,117 @@
+﻿@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_BlankLayout.cshtml";
+}
+
+<div class="pages-hero">
+    <div class="container">
+        <div class="pages-title">
+            <h1>Contact Us</h1>
+            <div class="page-nav">
+                <p><a href="#">Home</a> &nbsp; | &nbsp; <a href="#">Contact Us</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- CONTENT START -->
+    <section>
+        <!-- SERVICES BOX START -->
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="contact-box-layer">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="sb-caption">
+                            <h4>Our Office</h4>
+                            <p>Palladan, Zaria. Kaduna State<br /> Nigeria.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-box-layer">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="sb-caption">
+                            <h4>Call Us</h4>
+                            <p>09056639986<br />08038724771</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-box-layer">
+                        <i class="fas fa-envelope"></i>
+                        <div class="sb-caption">
+                            <h4>Email Address</h4>
+                            <p>vitalseed@gmail.com<br />info@vitalseedltd.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SERVICES BOX END -->
+        <div class="wrapper-form mt-5">
+            <div class="container">
+                <div class="layer-title text-center">
+                    <h2>Get <span class="light-text">In Touch</span></h2>
+                    <p>
+                        We specialise in intelligent & effective Search and believes in the power of <br /> partnerships
+                        to
+                        grow business. We use agronomic machine learning, remote sensing,
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <form id="contact-form" method="post" action="contact.php">
+                            <div class="messages"></div>
+                            <div class="controls">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input id="form_name" type="text" name="name" class="form-control customize"
+                                                   placeholder="Name" required="required"
+                                                   data-error="Firstname is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input id="form_email" type="email" name="email"
+                                                   class="form-control customize" placeholder="Email address"
+                                                   required="required" data-error="Valid email is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input id="form_phone" type="tel" name="phone"
+                                                   class="form-control customize" placeholder="Please enter your phone">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <textarea id="form_message" name="message" class="form-control customize"
+                                                      placeholder="Your message" rows="6" required="required"
+                                                      data-error="Please,leave us a message."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 btn-send">
+                                        <p><input type="submit" class="btn btn-contact button" value="Send message"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MAP START -->
+        <div class="bottom-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d167616.99483399244!2d-74.08279002518668!3d40.67646407501496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a560db693e3%3A0xb05e8b0bdf854b54!2sGowanus%2C+Brooklyn%2C+Nueva+York%2C+EE.+UU.!5e0!3m2!1ses-419!2sdo!4v1560863423970!5m2!1ses-419!2sdo" class="map-iframe-alt"></iframe>
+        </div>
+        <!-- MAP END -->
+    </section>
+    <!-- CONTENT END -->
